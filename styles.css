@@ -1,0 +1,51 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(210, 180, 140, 0.205);
+}
+
+h1 {
+    color: rgba(216, 191, 216, 0.938);
+    text-align: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    "b a c";
+    align-items: center;
+}
+
+#clear {
+    grid-area: c;
+}
+
+input[type=text] {
+    padding:9px; 
+    border:2px solid #ccc; 
+    -webkit-border-radius: 8px;
+    border-radius: 6px;
+    width: 455px;
+    grid-area: a;
+}
+
+input[type=text]:focus {
+    border-color:rgb(147, 207, 238);
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#btn {
+    font-size: 4px;
+    /* align-content: center;
+    text-align: center; */
+    grid-area: b;
+}
